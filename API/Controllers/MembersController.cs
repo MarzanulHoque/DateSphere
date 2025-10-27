@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers;
-[Authorize]
+//[Authorize]
 public class MembersController(AppDbContext dbContext) : BaseApiController
 {
     [HttpGet]
