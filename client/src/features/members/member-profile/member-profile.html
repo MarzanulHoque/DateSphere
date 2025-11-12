@@ -19,9 +19,14 @@
         About {{ member.displayName }}
     </h3>
 
-    <div>
-        {{ member.description }}
-    </div>
+        @if(memberService.editMode())
+        {
+            <div>
+                Profile form goes here !!!
+            </div>
+        }@else{
+            {{ member.description }}
+        }
 
 </div>
 }
