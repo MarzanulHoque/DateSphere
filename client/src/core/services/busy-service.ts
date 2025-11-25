@@ -11,7 +11,7 @@ export class BusyService {
   {
     this.busyRequestCount.update(current => current +1);
   }
-  idl()
+  idle()
   {
     this.busyRequestCount.update(current => Math.max(0,current-1))
   }
